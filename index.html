@@ -1,20 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Challenge: Links for learning</title>
+        <title>Spin-off of "Project: Event invite"</title>
+        <style>
+        h1{
+          font-family:Sans-serif;
+          color:RGB(100,250,250);
+          position:absolute;
+          top:0%;
+          
+        }
+    h2{
+        font-family:Sans-serif;
+        color:RGB(100,250,250);
+        font-style:italic;
+        font-weight:bold;
+        position:absolute;
+        top:12%;
+        font-size:30px;
+            font-family:monospace;
+    
+            }
+    #new{
+        color:RGB(250,100,50);
+        font-size:40px;
+        font-style:normal;
+            font-family:cursive;
+        
+    }
+    #year{
+        color:RGB(100,250,50);
+        font-style:normal;
+        font-size:40px;
+        font-family:cursive;
+    }
+        #list{
+            background-color:RGB(230,230,230);
+            height:220px;
+            position:absolute;
+            top:10px;
+            border:10px  silver outset;
+            right:0px;
+            border-radius:20px;
+        
+            
+        }
+           #gamelist{
+               height:1em;
+                margin-top:14px;
+                color:RGB(0,0,120);
+                font-family:arial;
+                
+
+           }
+           #fireworkslist{
+               height:1em;
+                margin-top:14px;
+                color:RGB(100,220,220);
+                font-family:arial;
+           }
+           #foodlist{
+               height:1em;
+                margin-top:14px;
+                color:RGB(250,140,0);
+                font-family:arial;
+
+           }
+           #musiclist{
+               height:1em;
+                margin-top:14px;
+                color:RGB(100,200,0);
+                font-family:arial;
+
+           }
+           #dancelist{
+               height:1em;
+               margin-top:14px;
+               color:RGB(250,0,0);
+               font-family:arial;
+
+           }
+           #time{
+               color:blue;
+               font-family:cursive;
+
+           }
+           #date{
+               color:blue;
+               font-family:cursive;
+           }
+           #venue{
+               color:blue;
+                font-family:cursive;
+           }
+           #day{
+               color:red;
+                font-family:arial;
+           }
+           #hour{
+               color:red;
+               font-family:arial;
+           }
+           #address{
+               color:red;
+               font-family:arial;
+           }
+
+           #games{
+               height:1.5em;
+           }
+           #food{
+               height : 1.5em;
+           }
+            #fireworks{
+               height : 1.5em;
+           }
+            .dance{
+               height : 1.5em;
+           }
+            #music{
+               height : 1.5em;
+           }
+            #countdown{
+               height : 1.5em;
+           }
+           #tel{
+               color:red;
+               font-family:arial;
+           }
+           #rsvp{
+               color:blue;
+               font-family:cursive;
+           }
+           #events{
+               color:RGB(50,50,50);
+               font-family:cursive;
+               font-size:20px;
+               
+           }
+            #final{
+                color:RGB(200,100,100);
+                font-family:monospace;
+                position:absolute;
+                top:100%;
+                border:10px RGB(200,100,100) none;
+                border-radius:60px;
+                font-weight:bold;
+            }
+            #nye{
+                color:red;
+                font-style:italic;
+                
+            }
+            #division{
+                position:absolute;
+                border:1px silver inset;
+                top:40%;
+                 background-color:RGB(230,230,230);
+                 border-radius:20px;
+                    }
+            #party{
+                position:absolute;
+                top:0px;
+                z-index:0;
+                border:solid;
+            
+            }
+         body{
+             
+             background-image:url("https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/fireworks-over-harbor.png");
+         }
+        table{
+            position:absolute;
+            border:1px white inset;
+            right:30%;
+            bottom:1%;
+          
+        }
+        th{
+            border:1px solid white;
+            font-style:italic;
+            font-weight:bold;
+            font-family:sans-serif;
+            color:silver;
+              border-radius:20px;
+        }
+        td{
+            font-weight:bold;
+            border:1px solid white;
+            font-family:monospace;
+            color:white;
+              border-radius:20px;
+        }
+        </style>
     </head>
     <body>
-        
-        <h1>Links for learning</h1>
-        
-        <ul>
-            <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css/html-tags-continued/pt/html-internal-links">Challenges:Links for learning</a></li>
-            <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css/html-tags-continued/pc/challenge-jump-around">Challenge:Jump around</a></li>
-            <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css/html-tags-continued/pt/html-tables">HTML tables</a></li>
+    
+        <h1><strong>You're invited!</strong></h1>
+        <h2>To<br><em><a id="new"> New </a><a id="year">Year</a>'s Party!</em></h2>
+        <div id="division">
+        <p id="day"><a id="date">Date:</a><strong>31/12/2025</strong></p>
+        <p id="hour"><a id="time">Time:</a><strong>11:00 pm</strong></p>
+        <p id="address"><a id="venue">Venue:</a><strong> Place DistrictHall  <br>0000 NewStreet</strong></p>
+        <p id="rsvp">RSVP | <a id="tel"><strong>+01 23456789</strong></a></p>
+        </div>
+        <div id="list">
+        <p id="events"><em>Special events</em></p>
+        <ul >
+           <li id="musiclist"><strong>Music Festival</strong> <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/avatar-team.png" id="music" alt ="music"></li>
+        <li id="gamelist"><strong>Games</strong><img id="games" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/space/beetleship.png" alt="games"></li>
+         <li id="foodlist"><strong>Free Food and drinks special time</strong><img  id="food" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/ice-cream.png" alt="food"></li>
+         <li id="dancelist"><strong>Dance<img class="dance" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Hopper-Jumping.png" alt="dance"> and Laser show</strong><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/fireworks-scattered.png" class="dance" alt="dance"></li>
+         <li id="fireworkslist"><strong>Countdown<img id="countdown" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/space/3.png" alt="countdown"> and Fireworks at midnight</strong><img id="fireworks" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/fireworks-in-sky.png" alt="fireworks"></li>
         </ul>
+        </div>
 
-        <img src="https://www.kasandbox.org/programming-images/cute/Heart.png">
+        <table>
+     <thead>
+<tr>
+        <th>Prices</th>
+        <th>Category</th>
+</tr>        
+</thead>
+        <tbody>
+        <tr>
+            <td>80 Euro</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>100 Euro</td>
+            <td>VIP</td>
+        </tr>
+        <tr>
+            <td>150 Euro</td>
+            <td>VVIP</td>
+        </tr>
+    </tbody>
+        </table>
+
+        <div id="final">
+        <p><em>Come one, Come all and start<strong> the New Year</strong> with the best <a href="#events" id="nye">events</a> in the world</em></p>
+        </div>
     </body>
 </html>
-<!--HTML-->
